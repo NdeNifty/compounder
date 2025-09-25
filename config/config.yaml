@@ -1,0 +1,94 @@
+# General Settings
+starting_capital: 200.0  # USD
+mode: simulation  # Options: simulation, backtest, live
+session_hours: 4  # Duration per session
+interval_minutes: 5  # Trading/check interval
+
+# Stock Analysis (Scans all OANDA CFDs; fallback below for non-live)
+stocks: ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'BRK-B', 'JPM', 'V']  # Unused in OANDA mode; legacy fallback
+oanda_supported:  # Expanded common US stock CFDs (full names); ~50 for robust fallback
+  - 'AAPL_USD'
+  - 'MSFT_USD'
+  - 'GOOGL_USD'
+  - 'AMZN_USD'
+  - 'TSLA_USD'
+  - 'NVDA_USD'
+  - 'META_USD'
+  - 'BRK_B_USD'
+  - 'JPM_USD'
+  - 'V_USD'
+  - 'AMD_USD'
+  - 'NFLX_USD'
+  - 'ADBE_USD'
+  - 'CRM_USD'
+  - 'ORCL_USD'
+  - 'CSCO_USD'
+  - 'INTC_USD'
+  - 'IBM_USD'
+  - 'BA_USD'
+  - 'KO_USD'
+  - 'PEP_USD'
+  - 'PFE_USD'
+  - 'JNJ_USD'
+  - 'MRK_USD'
+  - 'ABBV_USD'
+  - 'TMO_USD'
+  - 'DHR_USD'
+  - 'UNH_USD'
+  - 'JNJ_USD'
+  - 'PG_USD'
+  - 'VZ_USD'
+  - 'T_USD'
+  - 'DIS_USD'
+  - 'NKE_USD'
+  - 'MCD_USD'
+  - 'SBUX_USD'
+  - 'LOW_USD'
+  - 'HD_USD'
+  - 'WMT_USD'
+  - 'COST_USD'
+  - 'TGT_USD'
+  - 'BKNG_USD'
+  - 'CMG_USD'
+  - 'SPLK_USD'
+  - 'NOW_USD'
+  - 'SNPS_USD'
+  - 'CDNS_USD'
+  - 'FTNT_USD'
+  - 'TEAM_USD'
+  - 'ZS_USD'
+
+# Data
+data_source: 'oanda'  # 'oanda' or 'yfinance'
+historical_period: '1y'  # Parsed to dates
+historical_interval: '1h'  # Mapped to OANDA 'H1'
+instrument_cache_hours: 1  # Cache refresh
+oanda_granularity_map:
+  '1h': 'H1'
+max_candles_per_request: 5000  # Pagination
+
+# ML Model
+model_type: RandomForest  # Options: RandomForest, GradientBoosting, LSTM
+train_test_split: 0.8
+features:
+  lags: [1, 2, 3, 5]
+  indicators:
+    rsi_period: 14
+    macd_fast: 12
+    macd_slow: 26
+    macd_signal: 9
+    sma_period: 20
+
+# Trading Thresholds
+buy_threshold: 0.01
+sell_threshold: -0.01
+stop_loss_percent: 0.02
+take_profit_percent: 0.04
+
+# Risk Management
+risk_per_trade_percent: 0.05
+leverage: 1
+
+# Logging
+log_level: INFO
+log_file: 'trades.log'

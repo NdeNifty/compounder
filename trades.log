@@ -1,0 +1,108 @@
+2025-09-25 02:40:13,437 - INFO - Starting trading system with config: {'starting_capital': 200.0, 'mode': 'simulation', 'session_hours': 4, 'interval_minutes': 5, 'stocks': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'BRK-B', 'JPM', 'V'], 'num_stocks_to_scan': 10, 'scan_interval_minutes': 5, 'model_type': 'RandomForest', 'train_test_split': 0.8, 'features': {'lags': [1, 2, 3, 5], 'indicators': {'rsi_period': 14, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'sma_period': 20}}, 'buy_threshold': 0.01, 'sell_threshold': -0.01, 'stop_loss_percent': 0.02, 'take_profit_percent': 0.04, 'risk_per_trade_percent': 0.05, 'leverage': 1, 'historical_period': '1y', 'historical_interval': '1h', 'oanda_token': 'your-api-token-here', 'oanda_account_id': 'your-account-id-here', 'oanda_environment': 'practice', 'log_level': 'INFO', 'log_file': 'trades.log'}
+2025-09-25 13:50:08,695 - INFO - Starting trading system with config: {'starting_capital': 200.0, 'mode': 'simulation', 'session_hours': 4, 'interval_minutes': 5, 'stocks': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'BRK-B', 'JPM', 'V'], 'instrument_cache_hours': 1, 'cfd_filter': True, 'model_type': 'RandomForest', 'train_test_split': 0.8, 'features': {'lags': [1, 2, 3, 5], 'indicators': {'rsi_period': 14, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'sma_period': 20}}, 'buy_threshold': 0.01, 'sell_threshold': -0.01, 'stop_loss_percent': 0.02, 'take_profit_percent': 0.04, 'risk_per_trade_percent': 0.05, 'leverage': 1, 'historical_period': '1y', 'historical_interval': '1h', 'oanda_token': 'your-api-token-here', 'oanda_account_id': 'your-account-id-here', 'oanda_environment': 'practice', 'log_level': 'INFO', 'log_file': 'trades.log'}
+2025-09-25 13:57:07,058 - INFO - Starting trading system with config: {'starting_capital': 200.0, 'mode': 'simulation', 'session_hours': 4, 'interval_minutes': 5, 'stocks': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'BRK-B', 'JPM', 'V'], 'instrument_cache_hours': 1, 'cfd_filter': True, 'model_type': 'RandomForest', 'train_test_split': 0.8, 'features': {'lags': [1, 2, 3, 5], 'indicators': {'rsi_period': 14, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'sma_period': 20}}, 'buy_threshold': 0.01, 'sell_threshold': -0.01, 'stop_loss_percent': 0.02, 'take_profit_percent': 0.04, 'risk_per_trade_percent': 0.05, 'leverage': 1, 'historical_period': '1y', 'historical_interval': '1h', 'oanda_token': 'your-api-token-here', 'oanda_account_id': 'your-account-id-here', 'oanda_environment': 'practice', 'log_level': 'INFO', 'log_file': 'trades.log', 'num_stocks_to_scan': 50}
+2025-09-25 13:57:07,058 - INFO - Fetching historical data for 10 stocks...
+2025-09-25 13:57:08,319 - INFO - AAPL: Successfully fetched and cached
+2025-09-25 13:57:08,679 - INFO - MSFT: Successfully fetched and cached
+2025-09-25 13:57:09,096 - INFO - GOOGL: Successfully fetched and cached
+2025-09-25 13:57:09,376 - INFO - AMZN: Successfully fetched and cached
+2025-09-25 13:57:09,746 - INFO - TSLA: Successfully fetched and cached
+2025-09-25 13:57:10,210 - INFO - NVDA: Successfully fetched and cached
+2025-09-25 13:57:10,604 - INFO - META: Successfully fetched and cached
+2025-09-25 13:57:10,960 - INFO - BRK-B: Successfully fetched and cached
+2025-09-25 13:57:11,362 - INFO - JPM: Successfully fetched and cached
+2025-09-25 13:57:11,760 - INFO - V: Successfully fetched and cached
+2025-09-25 13:57:11,760 - INFO - Data fetching complete: 10 stocks loaded
+2025-09-25 14:03:36,709 - INFO - Starting trading system with config: {'starting_capital': 200.0, 'mode': 'simulation', 'session_hours': 4, 'interval_minutes': 5, 'stocks': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'BRK-B', 'JPM', 'V'], 'instrument_cache_hours': 1, 'cfd_filter': True, 'model_type': 'RandomForest', 'train_test_split': 0.8, 'features': {'lags': [1, 2, 3, 5], 'indicators': {'rsi_period': 14, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'sma_period': 20}}, 'buy_threshold': 0.01, 'sell_threshold': -0.01, 'stop_loss_percent': 0.02, 'take_profit_percent': 0.04, 'risk_per_trade_percent': 0.05, 'leverage': 1, 'historical_period': '1y', 'historical_interval': '1h', 'oanda_token': 'your-api-token-here', 'oanda_account_id': 'your-account-id-here', 'oanda_environment': 'practice', 'log_level': 'INFO', 'log_file': 'trades.log', 'num_stocks_to_scan': 50}
+2025-09-25 14:03:36,709 - INFO - Fetching historical data for 10 stocks...
+2025-09-25 14:03:36,944 - INFO - AAPL: Successfully loaded from cache
+2025-09-25 14:03:37,001 - INFO - MSFT: Successfully loaded from cache
+2025-09-25 14:03:37,071 - INFO - GOOGL: Successfully loaded from cache
+2025-09-25 14:03:37,177 - INFO - AMZN: Successfully loaded from cache
+2025-09-25 14:03:37,245 - INFO - TSLA: Successfully loaded from cache
+2025-09-25 14:03:37,313 - INFO - NVDA: Successfully loaded from cache
+2025-09-25 14:03:37,374 - INFO - META: Successfully loaded from cache
+2025-09-25 14:03:37,437 - INFO - BRK-B: Successfully loaded from cache
+2025-09-25 14:03:37,496 - INFO - JPM: Successfully loaded from cache
+2025-09-25 14:03:37,579 - INFO - V: Successfully loaded from cache
+2025-09-25 14:03:37,579 - INFO - Data fetching complete: 10 stocks loaded
+2025-09-25 14:38:21,665 - INFO - Starting trading system with config: {'starting_capital': 200.0, 'mode': 'simulation', 'session_hours': 4, 'interval_minutes': 5, 'stocks': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'BRK-B', 'JPM', 'V'], 'oanda_supported': ['AAPL_USD', 'MSFT_USD', 'GOOGL_USD', 'AMZN_USD', 'TSLA_USD'], 'data_source': 'oanda', 'historical_period': '1y', 'historical_interval': '1h', 'instrument_cache_hours': 1, 'oanda_granularity_map': {'1h': 'H1'}, 'max_candles_per_request': 5000, 'model_type': 'RandomForest', 'train_test_split': 0.8, 'features': {'lags': [1, 2, 3, 5], 'indicators': {'rsi_period': 14, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'sma_period': 20}}, 'buy_threshold': 0.01, 'sell_threshold': -0.01, 'stop_loss_percent': 0.02, 'take_profit_percent': 0.04, 'risk_per_trade_percent': 0.05, 'leverage': 1, 'log_level': 'INFO', 'log_file': 'trades.log', 'oanda_token': '58793483eb18399107237718c4e4cf4f-425bbc6c1d59089fa0be79ffefa70cd2', 'oanda_account_id': '101-002-37063252-01', 'oanda_environment': 'practice'}
+2025-09-25 14:38:21,665 - INFO - setting up API-client for environment practice
+2025-09-25 14:38:21,665 - INFO - Using all 10 instruments for scanning
+2025-09-25 14:38:21,665 - INFO - Fetching OANDA data for all 10 instruments...
+2025-09-25 14:38:26,092 - WARNING - AAPL: Empty data
+2025-09-25 14:38:26,092 - WARNING - MSFT: Empty data
+2025-09-25 14:38:26,094 - WARNING - GOOGL: Empty data
+2025-09-25 14:38:26,095 - WARNING - AMZN: Empty data
+2025-09-25 14:38:26,095 - WARNING - TSLA: Empty data
+2025-09-25 14:38:26,095 - WARNING - NVDA: Empty data
+2025-09-25 14:38:26,095 - WARNING - META: Empty data
+2025-09-25 14:38:26,095 - WARNING - BRK-B: Empty data
+2025-09-25 14:38:26,095 - WARNING - JPM: Empty data
+2025-09-25 14:38:26,095 - WARNING - V: Empty data
+2025-09-25 14:38:26,095 - INFO - OANDA data complete: 0 instruments
+2025-09-25 14:38:26,095 - INFO - Selected top 3 from 10: []
+2025-09-25 14:38:26,095 - INFO - Running simulation...
+2025-09-25 14:38:26,095 - INFO - Starting simulation...
+2025-09-25 15:30:52,307 - INFO - Starting trading system with config: {'starting_capital': 200.0, 'mode': 'simulation', 'session_hours': 4, 'interval_minutes': 5, 'stocks': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'BRK-B', 'JPM', 'V'], 'oanda_supported': ['AAPL_USD', 'MSFT_USD', 'GOOGL_USD', 'AMZN_USD', 'TSLA_USD', 'NVDA_USD', 'META_USD', 'BRK_B_USD', 'JPM_USD', 'V_USD', 'AMD_USD', 'NFLX_USD', 'ADBE_USD', 'CRM_USD', 'ORCL_USD', 'CSCO_USD', 'INTC_USD', 'IBM_USD', 'BA_USD', 'KO_USD', 'PEP_USD', 'PFE_USD', 'JNJ_USD', 'MRK_USD', 'ABBV_USD', 'TMO_USD', 'DHR_USD', 'UNH_USD', 'JNJ_USD', 'PG_USD', 'VZ_USD', 'T_USD', 'DIS_USD', 'NKE_USD', 'MCD_USD', 'SBUX_USD', 'LOW_USD', 'HD_USD', 'WMT_USD', 'COST_USD', 'TGT_USD', 'BKNG_USD', 'CMG_USD', 'SPLK_USD', 'NOW_USD', 'SNPS_USD', 'CDNS_USD', 'FTNT_USD', 'TEAM_USD', 'ZS_USD'], 'data_source': 'oanda', 'historical_period': '1y', 'historical_interval': '1h', 'instrument_cache_hours': 1, 'oanda_granularity_map': {'1h': 'H1'}, 'max_candles_per_request': 5000, 'model_type': 'RandomForest', 'train_test_split': 0.8, 'features': {'lags': [1, 2, 3, 5], 'indicators': {'rsi_period': 14, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'sma_period': 20}}, 'buy_threshold': 0.01, 'sell_threshold': -0.01, 'stop_loss_percent': 0.02, 'take_profit_percent': 0.04, 'risk_per_trade_percent': 0.05, 'leverage': 1, 'log_level': 'INFO', 'log_file': 'trades.log', 'oanda_token': '58793483eb18399107237718c4e4cf4f-425bbc6c1d59089fa0be79ffefa70cd2', 'oanda_account_id': '101-002-37063252-01', 'oanda_environment': 'practice'}
+2025-09-25 15:30:52,315 - INFO - setting up API-client for environment practice
+2025-09-25 15:37:48,482 - INFO - Starting trading system with config: {'starting_capital': 200.0, 'mode': 'simulation', 'session_hours': 4, 'interval_minutes': 5, 'stocks': ['AAPL', 'MSFT', 'GOOGL', 'AMZN', 'TSLA', 'NVDA', 'META', 'BRK-B', 'JPM', 'V'], 'oanda_supported': ['AAPL_USD', 'MSFT_USD', 'GOOGL_USD', 'AMZN_USD', 'TSLA_USD', 'NVDA_USD', 'META_USD', 'BRK_B_USD', 'JPM_USD', 'V_USD', 'AMD_USD', 'NFLX_USD', 'ADBE_USD', 'CRM_USD', 'ORCL_USD', 'CSCO_USD', 'INTC_USD', 'IBM_USD', 'BA_USD', 'KO_USD', 'PEP_USD', 'PFE_USD', 'JNJ_USD', 'MRK_USD', 'ABBV_USD', 'TMO_USD', 'DHR_USD', 'UNH_USD', 'JNJ_USD', 'PG_USD', 'VZ_USD', 'T_USD', 'DIS_USD', 'NKE_USD', 'MCD_USD', 'SBUX_USD', 'LOW_USD', 'HD_USD', 'WMT_USD', 'COST_USD', 'TGT_USD', 'BKNG_USD', 'CMG_USD', 'SPLK_USD', 'NOW_USD', 'SNPS_USD', 'CDNS_USD', 'FTNT_USD', 'TEAM_USD', 'ZS_USD'], 'data_source': 'oanda', 'historical_period': '1y', 'historical_interval': '1h', 'instrument_cache_hours': 1, 'oanda_granularity_map': {'1h': 'H1'}, 'max_candles_per_request': 5000, 'model_type': 'RandomForest', 'train_test_split': 0.8, 'features': {'lags': [1, 2, 3, 5], 'indicators': {'rsi_period': 14, 'macd_fast': 12, 'macd_slow': 26, 'macd_signal': 9, 'sma_period': 20}}, 'buy_threshold': 0.01, 'sell_threshold': -0.01, 'stop_loss_percent': 0.02, 'take_profit_percent': 0.04, 'risk_per_trade_percent': 0.05, 'leverage': 1, 'log_level': 'INFO', 'log_file': 'trades.log', 'oanda_token': '58793483eb18399107237718c4e4cf4f-425bbc6c1d59089fa0be79ffefa70cd2', 'oanda_account_id': '101-002-37063252-01', 'oanda_environment': 'practice'}
+2025-09-25 15:37:48,486 - INFO - setting up API-client for environment practice
+2025-09-25 15:37:48,486 - WARNING - Cache invalid: Expecting value: line 1 column 1 (char 0)
+2025-09-25 15:37:48,486 - WARNING - Instrument fetch skipped in non-live mode.
+2025-09-25 15:37:48,486 - WARNING - Using fallback 50 instruments
+2025-09-25 15:37:48,490 - INFO - Using all 50 instruments for scanning
+2025-09-25 15:37:48,490 - INFO - Fetching OANDA data for all 50 instruments...
+2025-09-25 15:37:53,721 - WARNING - AAPL: Empty data
+2025-09-25 15:37:53,721 - WARNING - MSFT: Empty data
+2025-09-25 15:37:53,721 - WARNING - GOOGL: Empty data
+2025-09-25 15:37:53,721 - WARNING - AMZN: Empty data
+2025-09-25 15:37:53,721 - WARNING - TSLA: Empty data
+2025-09-25 15:37:53,721 - WARNING - NVDA: Empty data
+2025-09-25 15:37:53,721 - WARNING - META: Empty data
+2025-09-25 15:37:53,721 - WARNING - BRK: Empty data
+2025-09-25 15:37:53,721 - WARNING - JPM: Empty data
+2025-09-25 15:37:53,725 - WARNING - V: Empty data
+2025-09-25 15:37:53,725 - WARNING - AMD: Empty data
+2025-09-25 15:37:53,725 - WARNING - NFLX: Empty data
+2025-09-25 15:37:53,725 - WARNING - ADBE: Empty data
+2025-09-25 15:37:53,725 - WARNING - CRM: Empty data
+2025-09-25 15:37:53,727 - WARNING - ORCL: Empty data
+2025-09-25 15:37:53,727 - WARNING - CSCO: Empty data
+2025-09-25 15:37:53,727 - WARNING - INTC: Empty data
+2025-09-25 15:37:53,727 - WARNING - IBM: Empty data
+2025-09-25 15:37:53,727 - WARNING - BA: Empty data
+2025-09-25 15:37:53,727 - WARNING - KO: Empty data
+2025-09-25 15:37:53,727 - WARNING - PEP: Empty data
+2025-09-25 15:37:53,727 - WARNING - PFE: Empty data
+2025-09-25 15:37:53,727 - WARNING - JNJ: Empty data
+2025-09-25 15:37:53,727 - WARNING - MRK: Empty data
+2025-09-25 15:37:53,727 - WARNING - ABBV: Empty data
+2025-09-25 15:37:53,727 - WARNING - TMO: Empty data
+2025-09-25 15:37:53,731 - WARNING - DHR: Empty data
+2025-09-25 15:37:53,731 - WARNING - UNH: Empty data
+2025-09-25 15:37:53,731 - WARNING - JNJ: Empty data
+2025-09-25 15:37:53,731 - WARNING - PG: Empty data
+2025-09-25 15:37:53,731 - WARNING - VZ: Empty data
+2025-09-25 15:37:53,731 - WARNING - T: Empty data
+2025-09-25 15:37:53,731 - WARNING - DIS: Empty data
+2025-09-25 15:37:53,731 - WARNING - NKE: Empty data
+2025-09-25 15:37:53,735 - WARNING - MCD: Empty data
+2025-09-25 15:37:53,735 - WARNING - SBUX: Empty data
+2025-09-25 15:37:53,735 - WARNING - LOW: Empty data
+2025-09-25 15:37:53,735 - WARNING - HD: Empty data
+2025-09-25 15:37:53,735 - WARNING - WMT: Empty data
+2025-09-25 15:37:53,737 - WARNING - COST: Empty data
+2025-09-25 15:37:53,737 - WARNING - TGT: Empty data
+2025-09-25 15:37:53,737 - WARNING - BKNG: Empty data
+2025-09-25 15:37:53,737 - WARNING - CMG: Empty data
+2025-09-25 15:37:53,739 - WARNING - SPLK: Empty data
+2025-09-25 15:37:53,739 - WARNING - NOW: Empty data
+2025-09-25 15:37:53,739 - WARNING - SNPS: Empty data
+2025-09-25 15:37:53,739 - WARNING - CDNS: Empty data
+2025-09-25 15:37:53,739 - WARNING - FTNT: Empty data
+2025-09-25 15:37:53,739 - WARNING - TEAM: Empty data
+2025-09-25 15:37:53,739 - WARNING - ZS: Empty data
+2025-09-25 15:37:53,739 - INFO - OANDA data complete: 0 instruments
+2025-09-25 15:37:53,739 - INFO - Selected top 3 from 50: []
+2025-09-25 15:37:53,739 - ERROR - No top stocks selected (empty data); aborting.
